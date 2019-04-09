@@ -1,0 +1,14 @@
+header {
+  padding-top: 33px; }
+  header .logo img {
+    margin: 0 7px 0 11px; }
+  header .logo p:nth-child(1) {
+    font-family: "Roboto", sans-serif;
+    font-size: 29px;
+    color: #2b467d;
+    text-transform: uppercase;
+    text-align: center; }
+    header .logo p:nth-child(1) span {
+      color: #febf14; }
+
+/*# sourceMappingURL=header+footer.css.map */

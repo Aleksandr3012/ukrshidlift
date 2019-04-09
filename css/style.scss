@@ -1,0 +1,151 @@
+@import 'reset';
+@import 'header+footer';
+
+$mobile-color: #ffffff;
+$link-color: #ffca4b;
+
+.main-section {
+  background-image: url("../img/info-bg.png");
+  padding: 46px 0;
+
+  h1 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    font-family: $font;
+    font-weight: bold;
+    font-size: 67px;
+    color: $text-color;
+    @include max-screen(992px) {
+      font-size: 45px;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  }
+
+  h2 {
+    font-family: $font;
+    font-size: 30px;
+    color: $text-color;
+    display: block;
+    margin-bottom: 47px;
+    @include max-screen(992px) {
+      font-size: 23px;
+      color: $mobile-color;
+      text-align: center;
+    }
+  }
+
+  p {
+    margin-bottom: 47px;
+    font-family: $font;
+    color: $text-color;
+    @include max-screen(992px) {
+      color: $mobile-color;
+      text-align: center;
+    }
+  }
+
+  a {
+    background-color: $main_color;
+    border-radius: 4px;
+    font-size: 18px;
+    text-align: center;
+    padding: 15px;
+    display: block;
+    color: #FFFFFF;
+    text-transform: uppercase;
+
+    &:hover {
+      -webkit-box-shadow: 0 0 20px 3px #454545;
+      box-shadow: 0 0 20px 3px #454545;
+      text-decoration: none;
+    }
+  }
+}
+
+.about {
+  padding: 46px 0;
+
+  img {
+    @include max-screen(992px) {
+      display: none;
+    }
+  }
+
+  h2 {
+    margin-bottom: 24px;
+    font-family: $font;
+    font-size: 40px;
+    color: $text-color;
+    font-weight: 300;
+  }
+
+  p {
+    margin-bottom: 23px;
+    line-height: 25px;
+    font-size: 16px;
+    color: $text-color;
+    font-family: $font;
+  }
+
+  .more-info {
+    font-size: 18px;
+    color: $main_color;
+  }
+
+  .awards {
+    border-bottom: solid 1px #d6d8d9;
+    padding-bottom: 7px;
+
+    img {
+      padding: 0 32px 144px 0;
+    }
+
+    h3 {
+      font-family: $font;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .support {
+    position: relative;
+    padding: 50px 0;
+
+    a {
+      font-family: $font;
+      font-size: 16px;
+      color: $main_color;
+
+      &:hover {
+        text-decoration: none;
+        border-bottom: 2px $main_color dotted;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.catalog {
+  background-image: url("../img/catalog-bg.png");
+  padding: 94px 0 104px;
+
+  h3 {
+    color: $mobile-color;
+    text-align: center;
+    font-family: $font;
+    font-size: 40px;
+    //margin-top: ;
+  }
+
+  a {
+    font-family: $font;
+    color: $link-color;
+  }
+
+  p {
+    color: #d7d7d7;
+    font-family: $font;
+  }
+}
