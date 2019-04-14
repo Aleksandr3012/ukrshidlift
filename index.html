@@ -9,17 +9,21 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
           integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <!-- js -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <script
             src="https://code.jquery.com/jquery-2.2.1.js"
             integrity="sha256-eNcUzO3jsv0XlJLveFEkbB8bA7/CroNpNVk3XpmnwHc="
             crossorigin="anonymous"></script> <!-- jquery -->
     <script src="js/bootstrap.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="js/script.js"></script>
     <!-- css -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/bootstrap-theme.css">
-    <link rel="stylesheet" href="css/style.css">
+
     <title>Укрсхидлифт</title>
 </head>
 <body>
@@ -50,7 +54,7 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-default header-menu">
+    <nav class="navbar navbar-default header-menu" id="aside1">
         <div class="container">
             <div class="navbar-header text-center">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
@@ -64,11 +68,11 @@
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="nav navbar-nav">
                     <li class="active"><a href="#">Главная</a></li>
-                    <li><a href="#">О компании</a></li>
-                    <li><a href="#">Продукция</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="about.html">О компании</a></li>
+                    <li><a href="products.html">Продукция</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="news.html">Новости</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
                 </ul>
             </div>
         </div>
@@ -84,7 +88,7 @@
                     на рынке лифтового хозяйства</h2>
                 <p>ПКП «Укрсхидлифт» ООО – лидирующая компания на рынке лифтового хозяйства г. Харькова,
                     Харьковской области и одно из ведущих в Украине.</p>
-                <a href="#" role="button">Оставить заявку</a>
+                <a href="#form" role="button">Оставить заявку</a>
             </div>
         </div>
     </div>
@@ -94,7 +98,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-5">
-                <img src="img/about-bg.png" alt="">
+                <img src="img/about-bg.png" alt="" class="left-img">
             </div>
             <div class="col-md-7 col-xs-12">
                 <h2>О компании</h2>
@@ -113,8 +117,8 @@
                         о.компании</p>
                 </div>
                 <div class="support">
-                    <a href="#">Скачать прайс-лист</a>
-                    <a href="#">Сообщить о неисправности</a>
+                    <a href="#"><img src="img/about-bottom-link-1-icon.png" alt=""/>Скачать прайс-лист</a>
+                    <a href="#"><img src="img/about-bottom-link-2-icon.png" alt=""/>Сообщить о неисправности</a>
                 </div>
             </div>
         </div>
@@ -125,7 +129,7 @@
     <div class="container">
         <h3>Каталог продукции</h3>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 right">
                 <a href="#">Диспетчеризация</a>
                 <p>Централизованные системы контроля лифтового хозяйства.</p>
                 <a href="#">Малогрузовые лифты</a>
@@ -153,6 +157,7 @@
                     ступенями для перемещения людей</p>
 
             </div>
+            <img src="img/triangle-border.png" alt="" class="arrow-border"/>
         </div>
     </div>
 </section>
@@ -161,16 +166,156 @@
     <div class="container">
         <div class="row">
             <h3>Наши услуги</h3>
-            <p>Услуги предоставляемые нашей компанией</p>
-            <div class="col-md-6 col-xs-12">
-
+            <p class="company-services">Услуги предоставляемые нашей компанией</p>
+            <div class="col-md-6 col-xs-12 our-services">
+                <a href="#"><img src="img/serv-li-6.png" alt=""/></a>
+                <a href="#" class="text-content">Монтаж и демонтаж лифтов</a>
+                <p>В настоящее время в практике монтажа лифтовых
+                    установок используются три основных метода:
+                    поэлементный, укрупненными блоками и тюбинговый.</p>
             </div>
-            <div class="col-md-6 col-xs-12">
+            <div class="col-md-6 col-xs-12 our-services">
+                <a href="#"><img src="img/serv-li-4.png" alt=""/></a>
+                <a href="#" class="text-content">Освидетельствование лифтов</a>
+                <p>Уважаемый Руководитель, уведомляем Вас, о
+                    необходимости проведения полного, частичного
+                    технических осмотров: лифтов грузоподъемных
+                    кранов; подъемников; погрузчиков; эскалаторов.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12 our-services">
+                <a href="#"><img src="img/serv-li-2.png" alt=""/></a>
+                <a href="#" class="text-content">Текущий и капитальный ремонт лифтов</a>
+                <p>Текущий и капитальный ремонт лифтов</p>
+            </div>
+            <div class="col-md-6 col-xs-12 our-services">
+                <a href="#"><img src="img/serv-li-3.png" alt=""/></a>
+                <a href="#" class="text-content">Техническое обслуживание диспетчерских систем</a>
+                <p>Техническое обслуживание диспетчерских систем</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12 our-services">
+                <a href="#"><img src="img/serv-li-5.png" alt=""/></a>
+                <a href="#" class="text-content">Техническое обслуживание лифтов</a>
+                <p>Специализированная организация в своей работе
+                    руководствуется: технической документацией
+                    заводов-изготовителей, ПУБЭЛ, ПУЭ, ПБЭЭП,
+                    ПТЭЭП, технологическими процессами и
+                    инструкциями, а также Положением (КД 36.1-001-2000).</p>
+            </div>
+            <div class="col-md-6 col-xs-12 our-services">
+                <a href="#"><img src="img/serv-li-7.png" alt=""/></a>
+                <a href="#" class="text-content">Экспертное обследование</a>
+                <p>Экспертное обследование (техническое
+                    диагностирование) проводится с целью
+                    определения технического состояния
+                    оборудования, определения возможности,
+                    целесообразности, условий и срока его надежной
+                    эксплуатации</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-xs-12 our-services">
+                <a href="#"><img src="img/serv-li-1.png" alt=""/></a>
+                <a href="#" class="text-content">Электротехническая лаборатория</a>
+                <p>Электротехническая лаборатория</p>
+            </div>
+            <div class="col-md-6 col-xs-12 ">
+                <a href="#form" role="button" class="request">Заявка на услугу</a>
+                <p class="form">Заполните форму,
+                    опишите вид услуги и
+                    мы решим вашу проблему</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!--Сделать карусуль-->
+<section class="news">
+    <div class="container">
+        <h3>Новости компании</h3>
+        <div class="owl-theme owl-carousel">
+            <div>
+                <img src="img/catalog-img.png" alt=""/>
+                <span>06 октября 2015</span>
+                <a href="#">С 1 марта в Харькове новые тарифы на квартплату</a>
+                <p>Решением исполкома установлены новые тарифы на услуги по содержанию домов, сооружений и придомовых
+                    территорий для домов коммунальной собственности территориальной громады г. Харькова, по каждому дому
+                    отдельно, в зависимости от количественных показателей фактического оказания услуг, с учетом
+                    обеспечения
+                    надлежащего санитарно-гигиенического, противопожарного, технического состояния домов, сооружений и
+                    придомовых территорий.
+                </p>
+                <a href="#">Подробнее</a>
+            </div>
+            <div>
 
             </div>
         </div>
     </div>
 </section>
+
+<section class="application" id="form">
+    <div class="container">
+        <div class="col-md-offset-3 col-md-6 col-xs-12">
+            <h3><b>Оставить заявку на заказ</b></h3>
+            <form action="" method="post">
+                <!--<div class="input-group input-group-lg">-->
+                <!--<span class="input-group-addon" id="sizing-addon1">@</span>-->
+                <input type="text" class="form-control" placeholder="Имя" aria-describedby="sizing-addon1">
+                <input type="text" class="form-control" placeholder="Телефон" aria-describedby="sizing-addon1">
+                <input type="email" class="form-control" placeholder="E-mail" aria-describedby="sizing-addon1">
+                <textarea name="comment" id="" rows="5" placeholder="Комментарий к заказу"></textarea>
+                <button type="submit" class="btn btn-default">Оставить заявку</button>
+                <!--</div>-->
+            </form>
+        </div>
+        <img src="img/triangle-border.png" alt="" class="arrow-border"/>
+    </div>
+</section>
+
+<section class="photo-gallery">
+    <div class="container">
+        <h3>Фотогалерея</h3>
+        <div class="owl-carousel owl-theme">
+            <!--<span class="arrow-owl arrow-left"></span>-->
+            <div>
+                <img src="img/photo-1.png" alt=""/>
+                <a href=""></a>
+            </div>
+            <div>
+                <img src="img/photo-2.png" alt=""/>
+                <a href=""></a>
+            </div>
+            <div>
+                <img src="img/photo-3.png" alt=""/>
+                <a href=""></a>
+            </div>
+            <div>
+                <img src="img/photos-img-1.png" alt=""/>
+                <a href="#">Выставка в Италии Lift-2010</a>
+            </div>
+            <div>
+                <img src="img/photos-img-2.png" alt=""/>
+                <a href="#">DMG (станции управления)</a>
+            </div>
+            <div>
+                <img src="img/photos-img-3.png" alt=""/>
+                <a href="#">Interlift 2009</a>
+            </div>
+            <div>
+                <img src="img/photos-img-4.png" alt=""/>
+                <a href="#"><span>Schaefer</span>(панель приказов VIP)</a>
+            </div>
+            <!--<span class="arrow-owl arrow-right"></span>-->
+        </div>
+
+    </div>
+</section>
+
 
 <footer>
     <div class="container">
@@ -190,7 +335,7 @@
                 </form>
                 <div class="social-links">
                     <span>Мы в соцсетях:</span>
-                    <a href="#"><i class="fab fa-facebook-f"></i></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
                     <a href="#"><i class="fab fa-vk"></i></a>
                 </div>
             </div>
