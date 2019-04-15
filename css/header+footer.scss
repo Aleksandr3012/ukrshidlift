@@ -4,6 +4,9 @@ $size15: 15px;
 $footer_bg: #3e434a;
 $text-color: #3e434a;
 $link-color: #ffca4b;
+$mobile-color: #d7d7d7;
+$link-color: #ffca4b;
+
 
 @mixin transition-duration($time) {
   -webkit-transition-duration: $time;
@@ -98,7 +101,7 @@ header {
     }
   }
 
-  #aside1 { /* селектор блока, который будет оставаться на месте */
+  #aside1 {
 
   }
 

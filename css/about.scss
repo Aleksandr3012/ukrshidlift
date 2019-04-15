@@ -1,2 +1,75 @@
 @import 'reset';
 @import 'header+footer';
+@import 'h1-h2-p-a';
+
+.main {
+  background-image: url(../img/catalog-bg.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 60px 0;
+
+}
+
+.about {
+  padding: 40px 0;
+  .left-img {
+    @include max-screen(991px) {
+      display: none;
+    }
+  }
+  ul {
+    //padding: ;
+    list-style: none;
+    li {
+      margin-bottom: 23px;
+      line-height: 25px;
+      padding-left: 30px;
+      position: relative;
+      &:before {
+        position: absolute;
+        width: 15px;
+        height: 1px;
+        content: '';
+        display: block;
+        background-color: #008cce;
+        left: 0;
+        top: 13px;
+      }
+    }
+  }
+  .experience {
+    font-size: 16px;
+    font-family: $font;
+  }
+  .awards {
+    border-bottom: solid 1px #d6d8d9;
+    padding-bottom: 7px;
+    img {
+      padding: 0 32px 5px 0;
+    }
+    h3 {
+      font-size: 20px;
+      font-weight: bold;
+      font-family: $font;
+    }
+    p {
+      margin-bottom: 23px;
+      line-height: 25px;
+      font-size: 16px;
+      font-family: $font;
+      color: $text-color;
+    }
+  }
+  .support {
+    padding-top: 50px;
+    margin-right: 15px;
+    img, a {
+      margin-right: 10px;
+      @include max-screen(991px) {
+        display: inline-block;
+        margin-bottom: 10px;
+      }
+    }
+
+  }
+}

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -68,8 +67,6 @@ header {
       font-family: "Roboto", sans-serif;
       font-size: 15px;
       padding: 6px; }
-  header #aside1 {
-    /* ╤Б╨╡╨╗╨╡╨║╤В╨╛╤А ╨▒╨╗╨╛╨║╨░, ╨║╨╛╤В╨╛╤А╤Л╨╣ ╨▒╤Г╨┤╨╡╤В ╨╛╤Б╤В╨░╨▓╨░╤В╤М╤Б╤П ╨╜╨░ ╨╝╨╡╤Б╤В╨╡ */ }
   header .header-menu {
     border: none;
     border-radius: 0;

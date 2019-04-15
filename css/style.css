@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -68,8 +67,6 @@ header {
       font-family: "Roboto", sans-serif;
       font-size: 15px;
       padding: 6px; }
-  header #aside1 {
-    /* ╤Б╨╡╨╗╨╡╨║╤В╨╛╤А ╨▒╨╗╨╛╨║╨░, ╨║╨╛╤В╨╛╤А╤Л╨╣ ╨▒╤Г╨┤╨╡╤В ╨╛╤Б╤В╨░╨▓╨░╤В╤М╤Б╤П ╨╜╨░ ╨╝╨╡╤Б╤В╨╡ */ }
   header .header-menu {
     border: none;
     border-radius: 0;
@@ -377,12 +374,26 @@ footer {
         text-shadow: none;
         color: #FFFFFF; }
 
-.photo-gallery h3 {
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  margin-bottom: 39px;
-  font-size: 40px;
-  color: #3e434a;
-  font-weight: 300; }
+.photo-gallery {
+  padding: 28px 0 77px; }
+  .photo-gallery img {
+    max-height: 220px;
+    max-width: 220px;
+    margin-bottom: 15px; }
+  .photo-gallery h3 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 39px;
+    font-size: 40px;
+    color: #3e434a;
+    font-weight: 300; }
+  .photo-gallery a {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #2b467d;
+    text-align: center;
+    display: block;
+    padding-left: 5px; }
 
 /*# sourceMappingURL=style.css.map */

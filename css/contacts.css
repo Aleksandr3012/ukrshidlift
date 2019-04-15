@@ -114,4 +114,34 @@ footer {
   footer form {
     margin-bottom: 20px; }
 
-/*# sourceMappingURL=galery.css.map */
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 450;
+  color: #FFFFFF; }
+
+p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #3e434a;
+  margin-bottom: 23px;
+  line-height: 25px; }
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #337ab7;
+  cursor: pointer; }
+  a:hover {
+    text-decoration: none;
+    color: #ffca4b;
+    border: none; }
+
+.main {
+  background-image: url(../img/catalog-bg.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 60px 0; }
+
+/*# sourceMappingURL=contucts.css.map */
