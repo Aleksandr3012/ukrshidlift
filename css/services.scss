@@ -1,2 +1,89 @@
 @import 'reset';
 @import 'header+footer';
+@import 'h1-h2-p-a';
+
+.main {
+  @include main-section;
+}
+
+.services {
+  padding: 47px 0;
+  //border-bottom: solid 1px #cacaca;
+
+  h2 {
+    text-align: center;
+    color: $text-color;
+  }
+
+  p.company-services {
+    text-align: center;
+    font-family: $font;
+    margin-bottom: 63px;
+    font-size: 20px;
+    color: $text-color;
+  }
+
+  .our-services {
+    padding-bottom: 60px;
+    @include max-screen(992px) {
+      padding-bottom: 15px;
+    }
+
+    img {
+      float: left;
+      //margin: 0 20px 0 0;
+      //padding-top: 3px;
+      //vertical-align: middle;
+      padding: 0 32px 25px 0;
+    }
+
+    .text-content {
+      font-family: $font;
+      font-size: 20px;
+      color: $text-color;
+      margin-bottom: 12px;
+      font-weight: bold;
+    }
+
+    p {
+      font-family: $font;
+      font-size: 16px;
+      color: #4e545c;
+      line-height: 24px;
+    }
+  }
+
+  .form {
+    font-family: $font;
+    font-style: italic;
+    font-size: 18px;
+    color: $main_color;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+  }
+
+  a.request {
+    background-color: $main_color;
+    color: #ffffff;
+    font-family: $font;
+    //margin: 26px 0 0 133px;
+    display: block;
+    font-size: 18px;
+    width: 65%;
+    padding: 15px 25px;
+    margin: auto;
+    border-radius: 4px;
+    text-align: center;
+    @include max-screen(991px) {
+      width: 100%;
+    }
+
+    &:hover {
+      -webkit-box-shadow: 0 0 20px 3px #454545;
+      box-shadow: 0 0 20px 3px #454545;
+      text-decoration: none;
+    }
+  }
+}

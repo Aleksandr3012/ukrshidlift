@@ -1,2 +1,7 @@
 @import 'reset';
 @import 'header+footer';
+@import 'h1-h2-p-a';
+
+.main {
+  @include main-section;
+}

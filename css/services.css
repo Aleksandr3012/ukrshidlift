@@ -114,4 +114,98 @@ footer {
   footer form {
     margin-bottom: 20px; }
 
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #FFFFFF; }
+
+h2 {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #3e434a; }
+
+p:not(header, footer) {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #3e434a;
+  margin-bottom: 23px;
+  line-height: 25px; }
+
+a:not(header, footer) {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #337ab7;
+  cursor: pointer; }
+  a:not(header, footer):hover {
+    text-decoration: none;
+    color: #ffca4b;
+    border: none; }
+
+.main {
+  background-image: url(../img/catalog-bg.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 60px 0; }
+
+.services {
+  padding: 47px 0; }
+  .services h2 {
+    text-align: center;
+    color: #3e434a; }
+  .services p.company-services {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 63px;
+    font-size: 20px;
+    color: #3e434a; }
+  .services .our-services {
+    padding-bottom: 60px; }
+    @media screen and (max-width: 992px) {
+      .services .our-services {
+        padding-bottom: 15px; } }
+    .services .our-services img {
+      float: left;
+      padding: 0 32px 25px 0; }
+    .services .our-services .text-content {
+      font-family: "Roboto", sans-serif;
+      font-size: 20px;
+      color: #3e434a;
+      margin-bottom: 12px;
+      font-weight: bold; }
+    .services .our-services p {
+      font-family: "Roboto", sans-serif;
+      font-size: 16px;
+      color: #4e545c;
+      line-height: 24px; }
+  .services .form {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 18px;
+    color: #2b467d;
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    margin-top: 15px; }
+  .services a.request {
+    background-color: #2b467d;
+    color: #ffffff;
+    font-family: "Roboto", sans-serif;
+    display: block;
+    font-size: 18px;
+    width: 65%;
+    padding: 15px 25px;
+    margin: auto;
+    border-radius: 4px;
+    text-align: center; }
+    @media screen and (max-width: 991px) {
+      .services a.request {
+        width: 100%; } }
+    .services a.request:hover {
+      -webkit-box-shadow: 0 0 20px 3px #454545;
+      box-shadow: 0 0 20px 3px #454545;
+      text-decoration: none; }
+
 /*# sourceMappingURL=services.css.map */

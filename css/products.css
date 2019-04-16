@@ -114,4 +114,40 @@ footer {
   footer form {
     margin-bottom: 20px; }
 
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: 500;
+  color: #FFFFFF; }
+
+h2 {
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #3e434a; }
+
+p:not(header, footer) {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #3e434a;
+  margin-bottom: 23px;
+  line-height: 25px; }
+
+a:not(header, footer) {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #337ab7;
+  cursor: pointer; }
+  a:not(header, footer):hover {
+    text-decoration: none;
+    color: #ffca4b;
+    border: none; }
+
+.main {
+  background-image: url(../img/catalog-bg.png);
+  background-position: center center;
+  background-size: cover;
+  padding: 60px 0; }
+
 /*# sourceMappingURL=products.css.map */
